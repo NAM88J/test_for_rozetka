@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "HKGroteskLight";
+  src: local("HKGroteskLight"), local("HKGroteskLight"), url("../font/HKGroteskLight.woff2") format("woff2"), url("../font/HKGroteskLight.woff") format("woff"), url("../font/HKGroteskLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Leaguespartanbold";
+  src: local("Leaguespartanbold"), local("Leaguespartanbold"), url("../font/Leaguespartanbold.woff2") format("woff2"), url("../font/Leaguespartanbold.woff") format("woff"), url("../font/Leaguespartanbold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "HKGroteskLight", Arial, Helvetica, sans-serif;
+  line-height: 1.2;
+  color: #ffffff;
+  background-color: #272f45;
+}
+
+.wrap {
+  max-width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.link {
+  text-decoration: none;
+  transition: opacity 0.6s;
+  cursor: pointer;
+  display: inline-block;
+}
+.link:hover {
+  opacity: 0.5;
+}
+
+.header {
+  padding: 63px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header_search {
+  max-width: 176px;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 11px;
+}
+.header_search:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -11px;
+  height: 3px;
+  background-color: #63757e;
+}
+.header_search-text {
+  border: 0;
+  outline: 0;
+  background: none;
+  color: #63757e;
+  font-size: 24px;
+}
+.header_search-text::-moz-placeholder {
+  color: #63757e;
+}
+.header_search-text:-ms-input-placeholder {
+  color: #63757e;
+}
+.header_search-text::placeholder {
+  color: #63757e;
+}
+.header_search-button {
+  width: 21px;
+  height: 22px;
+  background: url("../img/search.png") no-repeat;
+  background-size: 100% 100%;
+  border: 0;
+  outline: 0;
+  color: transparent;
+  font-size: 0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.col {
+  background-size: cover;
+}
+.col_large {
+  width: 100%;
+  padding: 110px 61px 116px;
+  margin-bottom: 40px;
+}
+.col_large-title {
+  font-family: "Leaguespartanbold";
+  font-size: 80px;
+  text-transform: uppercase;
+  padding-bottom: 49px;
+}
+.col_large-text {
+  font-size: 32px;
+  max-width: 360px;
+  padding-bottom: 136px;
+}
+.col_large-link {
+  font-size: 24px;
+  padding: 21px 28px;
+}
+.col_medium {
+  width: calc(50% - 20px);
+  padding: 63px 31px 223px;
+  margin-bottom: 40px;
+}
+.col_medium.tar {
+  text-align: right;
+}
+.col_medium-title {
+  font-family: "Leaguespartanbold";
+  font-size: 48px;
+  line-height: 42px;
+  text-transform: uppercase;
+  padding-bottom: 28px;
+}
+.col_medium-text {
+  font-size: 24px;
+  padding-bottom: 61px;
+}
+.col_medium-link {
+  font-family: "Leaguespartanbold";
+  font-size: 18px;
+  padding: 18px 40px;
+}
+.col_small {
+  width: calc(33.333% - 26.666px);
+  padding: 30px;
+  min-height: 440px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.col_small.fb {
+  justify-content: flex-end;
+}
+.col_small-text {
+  font-size: 16px;
+  padding-bottom: 14px;
+  margin-top: 37px;
+}
+.col_small-title {
+  font-family: "Leaguespartanbold";
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  padding-bottom: 32px;
+}
+.col_small-link {
+  font-family: "Leaguespartanbold";
+  font-size: 18px;
+  padding: 17px 18px;
+}
+
+.footer {
+  color: #92a1a9;
+  padding-top: 117px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+.footer_title {
+  font-size: 36px;
+  padding-bottom: 20px;
+}
+.footer_subtitle {
+  font-size: 18px;
+  padding-bottom: 50px;
+}
+.footer_subscribe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 360px;
+  margin: 0 auto 100px;
+}
+.footer_subscribe input {
+  width: 100%;
+  margin-bottom: 20px;
+  background: none;
+  outline: none;
+  padding: 20px;
+  text-align: center;
+}
+.footer_subscribe-test {
+  border: 3px solid #92a1a9;
+  font-size: 24px;
+}
+.footer_subscribe-test::-moz-placeholder {
+  color: #92a1a9;
+}
+.footer_subscribe-test:-ms-input-placeholder {
+  color: #92a1a9;
+}
+.footer_subscribe-test::placeholder {
+  color: #92a1a9;
+}
+.footer_subscribe-button {
+  font-family: "Leaguespartanbold";
+  border: 3px solid #82c9d8;
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.footer_menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 31px;
+}
+.footer_menu li {
+  margin-right: 40px;
+}
+.footer_menu li a {
+  color: #92a1a9;
+  position: relative;
+}
+.footer_menu li a:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #92a1a9;
+  position: absolute;
+  right: -23px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.footer_menu li:last-child {
+  margin-right: 0;
+}
+.footer_menu li:last-child a:after {
+  display: none;
+}
+.footer_copuright {
+  font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  .col_large {
+    padding: 80px 40px;
+    margin-bottom: 30px;
+  }
+  .col_large-title {
+    font-size: 60px;
+    padding-bottom: 30px;
+  }
+  .col_large-text {
+    font-size: 28px;
+    max-width: 340px;
+    padding-bottom: 100px;
+  }
+  .col_large-link {
+    font-size: 20px;
+    padding: 18px 20px;
+  }
+  .col_medium {
+    width: calc(50% - 15px);
+    padding: 40px 25px 190px;
+    margin-bottom: 30px;
+  }
+  .col_medium-title {
+    font-size: 34px;
+    line-height: 1.2;
+    padding-bottom: 22px;
+  }
+  .col_medium-text {
+    font-size: 20px;
+    padding-bottom: 45px;
+  }
+  .col_medium-link {
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+  .col_small {
+    width: calc(33.333% - 20px);
+    padding: 15px;
+    min-height: 400px;
+    margin-bottom: 30px;
+  }
+  .col_small-text {
+    font-size: 16px;
+    padding-bottom: 12px;
+    margin-top: 20px;
+  }
+  .col_small-title {
+    font-size: 30px;
+    line-height: 1.2;
+    padding-bottom: 25px;
+  }
+  .col_small-link {
+    font-size: 16px;
+    padding: 16px 18px;
+  }
+}
+@media (max-width: 992px) {
+  .header {
+    padding: 40px 0;
+  }
+  .header_search {
+    max-width: 120px;
+    padding-left: 20px;
+    margin-bottom: 6px;
+  }
+  .header_search:after {
+    bottom: -6px;
+    height: 2px;
+  }
+  .header_search-text {
+    font-size: 16px;
+  }
+  .header_search-button {
+    width: 16px;
+    height: 16px;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+}/*# sourceMappingURL=style.css.map */
